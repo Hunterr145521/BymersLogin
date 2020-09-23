@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap');
+.indexStyle{
+    margin-top: 4rem;
+}
+
+.title{
+    font-family: 'Lobster', cursive;
+}
+.titles{
+    font-family: 'Lobster', cursive;
+    font-size: 32px;
+}
+
+
+body{
+    background-color: #f7f7f7;
+}
+
+
+.alignRight{
+    margin-right: 100px;
+}
+
+
+.margin{
+    margin-left: 950px;
+}
+.updown{
+    margin-top: 6px;
+}
+
+
+.test{
+    background-color: red;
+}
+
+
+.footer {
+    padding: 25px 0;
+    text-align: center;
+}
+
+
+.home{
+    background-color: red;
+}
+
+.up{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.ups{
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.padding{
+    margin: 20px;
+}
+
+.single-content{
+    position: relative;
+    transition: .3s;
+    box-shadow: 10px 20px 20px rgba(0,0,0,0.8);
+}
+
+.single-content .text-content,
+.single-content:after{
+    position: absolute;
+    left: 20px;
+    right: 20px;
+
+}
+
+
+.single-content:after{
+    content:  '';
+    display: block;
+    background: crimson;
+    top: 20px;
+    bottom: 20px;
+    opacity: 0;
+    transform: rotate3d(-1,1,0,100deg);
+    transition: .4s;
+}
+
+
+.single-content:hover:after{
+    opacity: .9;
+    transform: rotate3d(0,0,0,0deg);
+}
+
+.single-content img{
+    width: 100%;
+    height: auto;
+
+}
+
+.text-content{
+    top: 45%;
+    opacity: 0;
+    z-index: 1;
+    transform: translate(10%,-30%);
+    transition: .3s;
+    text-align: center;
+    color: #fff;
+}
+
+.text-content h4{
+    font-family: 'Lobster', cursive;
+}
+
+.single-content:hover .text-content{
+    opacity: 1;
+    transform: translate(0,-50%);
+    transition-delay: .3s;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #3586ff;
+}
+
+section .wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url('../assets/Images/wave.png');
+    background-size: 1000px 100px;
+}
+
+
+section .wave.wave1 {
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+
+section .wave.wave2 {
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+
+section .wave.wave3 {
+    animation: animate 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+
+section .wave.wave4 {
+    animation: animate2 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+}
+
+@keyframes animate{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animate2{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -1000px;
+    }
+}
+
+
+.textstyle{
+    color: white;
+    font-family: 'Pacifico', cursive;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.textstyles{
+    color: white;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.textstyleData{
+    color: white;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+}
+
+
+.inMid{
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    background-color: #eee;
+    left: 50%;
+    top: 200%;
+    transform: translate(-50%, -50%);
+    z-index: 1000000;
+}
+
+.right{
+    margin-left:120%;
+    cursor: pointer;
+}
+
+
+
+.btns{
+    border: none;
+    width: 100%;
+    height: 50vh;
+    background: #eeeeee;
+    text-transform: uppercase;
+    border-radius: 6px;
+    margin: 20px;
+    cursor: pointer;
+    background-size: 200%;
+    transition: 0.6s;
+}
+
+.btns1{
+    background-image: linear-gradient(to left, #ffc312,#ee5a24,#ffc312);
+}
+
+.btns2{
+    background-image: linear-gradient(to left, #c4e538,#009432,#c4e538);
+}
+
+.btns3{
+    background-image: linear-gradient(to left, #12cbc4,#0652dd,#12cbc4);
+}
+
+.btns4{
+    background-image: linear-gradient(to left, #fda7df,#9980fa,#fda7df);
+}
+.btns:hover{
+    background-position: right;
+}
+
+
+
+.forgotPassword{
+    background-color: #eee;
+    width: 100%;
+    height: 100vh;
+}
+
+.forgotbox{
+    background-color: white;
+
+}
+
+.textcenter{
+    color: black;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+
+.Facebook:hover{
+    cursor: pointer;
+}
